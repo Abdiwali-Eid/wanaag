@@ -268,7 +268,7 @@ export default function ProductScreen(props) {
                       </a>
                     ) : bugaag.name === 'Tafsiirka Quraanka' ? (
                       <a
-                        href="/files/so_01_Quraanka_Kariimka.pdf"
+                        href="/files/so_Quraanka_Kariimka_Iyo_Tarjamada_Macnihiisa_Ee_Afka_Soomaaliga (2).pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -398,7 +398,7 @@ export default function ProductScreen(props) {
                       </a>
                     ) : bugaag.name === 'Xaaraan la fududaystay' ? (
                       <a
-                        href="/files/so_Prohibitions_that_are_taken_too_lightly.pdf"
+                        href="/files/xaaraan la fududaystay.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -418,7 +418,7 @@ export default function ProductScreen(props) {
                       </a>
                     ) : bugaag.name === 'Axkaamta Tajwiidka' ? (
                       <a
-                        href="/files/Axkaamta tajwiidka.pdf"
+                        href="/files/axkaamta tajwiidka.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -548,7 +548,7 @@ export default function ProductScreen(props) {
                       </a>
                     ) : bugaag.name === 'Naxwaha Carabiga oo kooban' ? (
                       <a
-                        href="/files/so_The_rules_of_the_arabic_language.pdf"
+                        href="/files/naxwaha carabiga.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"

@@ -173,7 +173,7 @@ export default function Layout({ title, description, children }) {
                     sx={classes.brand}
                     style={{ paddingBottom: '20px' }}
                   >
-                    Buugaag 
+                    Buugaag
                   </Typography>
                 </Link>
               </NextLink>
@@ -215,7 +215,7 @@ export default function Layout({ title, description, children }) {
                   </NextLink>
                 </ListItem>
                 <ListItem>
-                  <NextLink href="/About">
+                  <NextLink href="/about">
                     <Link style={{ color: 'black' }}>About</Link>
                   </NextLink>
                 </ListItem>

@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       />
       <meta
         name="description"
-        content="Get all your sports fishing equipment at One Place Fishing. Open Monday to Friday, 9 to 5, in the Great Lake area."
+        content="Buugaag.me waxaad si free ah u gala dagi kartaa buugaag afsoomaali ku qoran oo PDF ah"
       />
       <meta name="og:title" content="One Place Fishing" />
       <meta name="og:description" content="some description here" />

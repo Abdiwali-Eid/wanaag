@@ -11,15 +11,12 @@ const About = () => {
             <div className="content-column col-lg-6 col-md-12 col-sm-12 order-2">
               <div className="inner-column">
                 <div className="sec-title">
-                  <span className="title">About Css3transition</span>
-                  <h2>We are Creative Tech Enthusiast working since 2015</h2>
+                 <h2><span className="title">About Buugaag.me</span></h2> 
+                  {/* <h2>We are Creative Tech Enthusiast working since 2015</h2> */}
                 </div>
                 <div className="text">
-                  I am Rahul Yaduvanshi works at Css3 Transition since last 3
-                  years. We are here to provide touch notch solution for your
-                  website or web application that helps you to make your website
-                  look attractive & efficient in handling by creating usefull
-                  plugins thats you need.
+               Buugaag.me waa website aad ka helaysid si fudud oo free ahna aad u gala dagi kartid buugaagta 
+               af soomaaliga ku qoran ee PDF-ka ah kuwooda ugu tayada sarreeya. 
                 </div>
                 <div className="text">
                   We are here to serve you next level tutorial that currently in

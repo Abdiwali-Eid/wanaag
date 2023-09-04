@@ -11,21 +11,19 @@ const About = () => {
             <div className="content-column col-lg-6 col-md-12 col-sm-12 order-2">
               <div className="inner-column">
                 <div className="sec-title">
-                 <h2><span className="title">About Buugaag.me</span></h2> 
+                  <h2>
+                    <span className="title">About Buugaag.me</span>
+                  </h2>
                   {/* <h2>We are Creative Tech Enthusiast working since 2015</h2> */}
                 </div>
                 <div className="text">
-               Buugaag.me waa website aad ka helaysid si fudud oo free ahna aad u gala dagi kartid buugaagta 
-               af soomaaliga ku qoran ee PDF-ka ah kuwooda ugu tayada sarreeya. 
-                </div>
-                <div className="text">
-                  We are here to serve you next level tutorial that currently in
-                  trend to match you with your expertise. Css3 transition is a
-                  learning website. where you can find many good quality content
-                  related to web development and tutorials about plugins. here
-                  we are using html, html5, css, css3, jquery & javascript along
-                  with inspirational UI design layout by professionals by using
-                  Photoshop and adobe allustrator.
+                  Buugaag.me waa website aad ka helaysid si fudud oo free ahna
+                  aad u gala dagi kartid buugaagta af soomaaliga ku qoran ee
+                  PDF-ka ah kuwooda ugu tayada sarreeya. Buugaagta waxaad ku
+                  raadin kartaa magacyadooda ama qaybaha ay ka kala
+                  tirsanyihiin. Si aad buugga aad rabtid aad ula waxaad ku
+                  dhufataa Button-ka Download ay ku qorantahay ee yaalla qaybta
+                  hoose ee bogga buug walba .
                 </div>
                 {/* <div className="btn-box">
                   <a href="#" className="theme-btn btn-style-one">

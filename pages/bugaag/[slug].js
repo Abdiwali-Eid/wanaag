@@ -84,6 +84,7 @@ export default function ProductScreen(props) {
                 </ListItem>
                 <ListItem>Qoraaga: {bugaag.Author}</ListItem>
                 <ListItem>Category: {bugaag.category}</ListItem>
+                <ListItem>Bogag: {bugaag.pages}</ListItem>
                 <ListItem>
                   <Typography>Description: {bugaag.description}</Typography>
                 </ListItem>

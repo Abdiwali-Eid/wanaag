@@ -371,7 +371,7 @@ export default function ProductScreen(props) {
                       </a>
                     ) : bugaag.name === 'Guri waa haween' ? (
                       <a
-                        href="/files/Guri waa haween. -.pdf"
+                        href="/files/Guri waa haween.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -381,7 +381,7 @@ export default function ProductScreen(props) {
                       </a>
                     ) : bugaag.name === 'Dikshinariga cusub' ? (
                       <a
-                        href="/files/Dikshaneeriga Cusub Ee Ardayda  -.pdf"
+                        href="/files/Dikshaneeriga Cusub Ee Ardayda  -KAYDBOOKS "
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -551,7 +551,7 @@ export default function ProductScreen(props) {
                       </a>
                     ) : bugaag.name === 'Gabayadii Sayidka' ? (
                       <a
-                        href="/files/Diiwaanka_Gabayadii_Sayid_Maxamed_Cabdulle_Xasan (1).pdf"
+                        href="/files/Diiwaanka_Gabayadii_Sayid_Maxamed_Cabdulle_Xasan1.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"

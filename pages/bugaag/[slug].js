@@ -84,13 +84,6 @@ export default function ProductScreen(props) {
                 </ListItem>
                 <ListItem>Qoraaga: {bugaag.Author}</ListItem>
                 <ListItem>Category: {bugaag.category}</ListItem>
-
-                <ListItem>
-                  {/* <Rating value={bugaag.rating} readOnly></Rating>
-                  <Typography sx={classes.smallText}>
-                    ({bugaag.numReviews} reviews)
-                  </Typography> */}
-                </ListItem>
                 <ListItem>
                   <Typography>Description: {bugaag.description}</Typography>
                 </ListItem>
@@ -326,7 +319,7 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === '100 Sunno' ? (
+                    ) : bugaag.name === '1000 Sunno' ? (
                       <a
                         href="/files/1000 sunno habeenkii iyo maalinkii.pdf"
                         alt="alt text"
@@ -336,7 +329,7 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Aamina Almufti' ? (
+                    ) : bugaag.name === 'Amiina Almufti' ? (
                       <a
                         href="/files/Amiina almufti.pdf"
                         alt="alt text"
@@ -588,7 +581,7 @@ export default function ProductScreen(props) {
                       </a>
                     ) : bugaag.name === 'Dab iyo Dhagax' ? (
                       <a
-                        href="/files/DabIyoDhagax-ebyoon.pdf"
+                        href="/files/DabIyoDhagax.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"

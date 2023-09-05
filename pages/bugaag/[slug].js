@@ -549,7 +549,7 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Gabayadii Sayidka' ? (
+                    ) : bugaag.name === 'Gabayadii Sayidka ' ? (
                       <a
                         href="/files/Diiwaanka_Gabayadii_Sayid_Maxamed_Cabdulle_Xasan1.pdf"
                         alt="alt text"

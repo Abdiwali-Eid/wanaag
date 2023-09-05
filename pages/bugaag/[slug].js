@@ -86,10 +86,10 @@ export default function ProductScreen(props) {
                 <ListItem>Category: {bugaag.category}</ListItem>
 
                 <ListItem>
-                  <Rating value={bugaag.rating} readOnly></Rating>
+                  {/* <Rating value={bugaag.rating} readOnly></Rating>
                   <Typography sx={classes.smallText}>
                     ({bugaag.numReviews} reviews)
-                  </Typography>
+                  </Typography> */}
                 </ListItem>
                 <ListItem>
                   <Typography>Description: {bugaag.description}</Typography>
@@ -636,9 +636,9 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                    ) : bugaag.name === 'Furaha Ganacsiga' ? (
                       <a
-                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        href="/files/Furaha Ganacsiga 2014.pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"

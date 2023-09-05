@@ -69,7 +69,7 @@ const Kormobil = () => {
   };
   return (
     <div
-    //   className="qibala"
+      //   className="qibala"
       style={{ width: 'auto', marginTop: '40px', marginLeft: '10px' }}
       // sx={isDesktop ? classes.visible : classes.hidden}
     >
@@ -78,7 +78,7 @@ const Kormobil = () => {
         className="lax"
         // sx={isDesktop ? classes.visible : classes.hidden}
       >
-        Book Categories
+        Qaybaha buugaagta
       </b>
       {categories.map((category) => (
         <NextLink
@@ -88,7 +88,10 @@ const Kormobil = () => {
           // sx={isDesktop ? classes.visible : classes.hidden}
         >
           <ListItem button component="a" onClick={sidebarCloseHandler}>
-            <ListItemText className='singlecat' primary={category}></ListItemText>
+            <ListItemText
+              className="singlecat"
+              primary={category}
+            ></ListItemText>
           </ListItem>
         </NextLink>
       ))}

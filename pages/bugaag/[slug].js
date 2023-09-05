@@ -236,7 +236,7 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Hal ka Haleel' ? (
+                    ) : bugaag.name === 'Hal ka haleel' ? (
                       <a
                         href="/files/hal ka haleel.pdf"
                         alt="alt text"
@@ -616,9 +616,9 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                    ) : bugaag.name === 'Mashruuca la dagaalanka nuurka' ? (
                       <a
-                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        href="/files/Mashruucii la dagaalanka nuurka .pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -626,9 +626,9 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Ilbaxnimadii Adal' ? (
+                    ) : bugaag.name === '10 Magac' ? (
                       <a
-                        href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
+                        href="/files/10 MAGA .pdf"
                         alt="alt text"
                         target="_blank"
                         rel="noopener noreferrer"

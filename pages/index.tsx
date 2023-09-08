@@ -133,8 +133,7 @@ export default function Home() {
                   </span>
                 </Grid>
                 <br />
-                start your learning journary by browsing Hundreds of books from
-                our library
+                si fudud oo bilaash ah ayaad kula dagi kartaa buugaagta PDFka ee afsooomaaliga ku qoran,kuwooda ugu tayada sarreeya
                 <br />
                 <button
                   className="button-5"

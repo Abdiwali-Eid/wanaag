@@ -380,7 +380,7 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Dikshinariga cusub' ? (
+                    ) : bugaag.name === 'Dikshinariga cusub ee ardayda' ? (
                       <a
                         href="/files/Dikshaneeriga Cusub Ee Ardayda  -KAYDBOOKS "
                         alt="alt text"

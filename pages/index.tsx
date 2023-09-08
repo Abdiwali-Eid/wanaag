@@ -116,20 +116,20 @@ export default function Home() {
                 books from our library */}
                 <Grid sx={isDesktop ? classes.visible : classes.hidden}>
                   <span className="ciwan">
-                    Download{' '}
+                    Si free ah u la dag{' '}
                     <span style={{ color: 'rgb(85, 128, 170)' }}>
-                      PDF Books
+                      Buugaag PDF ah
                     </span>
-                    <br /> Online{' '}
+                    <br /> {' '}
                   </span>
                 </Grid>
                 <Grid sx={isDesktop ? classes.hidden : classes.visible}>
                   <span className="ciwan">
-                    Download &nbsp;
+                  Si free ah u la dag &nbsp;
                     <span style={{ color: 'rgb(85, 128, 170)' }}>
-                      PDF Books &nbsp;
+                    Buugaag PDF ah &nbsp;
                     </span>
-                    Online
+                    
                   </span>
                 </Grid>
                 <br />

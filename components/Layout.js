@@ -195,6 +195,7 @@ export default function Layout({ title, description, children }) {
                     <IconButton
                       aria-label="close"
                       onClick={sidebarCloseHandler}
+                      className='floats'
                     >
                       <CancelIcon />
                     </IconButton>

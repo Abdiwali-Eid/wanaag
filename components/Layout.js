@@ -191,7 +191,7 @@ export default function Layout({ title, description, children }) {
                     alignItems="center"
                     justifyContent="space-between"
                   >
-                    <Typography>categories and menu</Typography>
+                    {/* <Typography>categories and menu</Typography> */}
                     <IconButton
                       aria-label="close"
                       onClick={sidebarCloseHandler}

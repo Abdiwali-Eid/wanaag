@@ -191,11 +191,11 @@ export default function Layout({ title, description, children }) {
                     alignItems="center"
                     justifyContent="space-between"
                   >
-                    {/* <Typography>categories and menu</Typography> */}
+                    <Typography>         </Typography>
                     <IconButton
                       aria-label="close"
                       onClick={sidebarCloseHandler}
-                      className='floats'
+                      className="floats"
                     >
                       <CancelIcon />
                     </IconButton>

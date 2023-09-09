@@ -133,7 +133,7 @@ export default function Home() {
                   </span>
                 </Grid>
                 <br />
-                si fudud oo bilaash ah ayaad kula dagi kartaa buugaagta PDFka ee afsooomaaliga ku qoran,kuwooda ugu tayada sarreeya
+                si fudud oo bilaash ah ayaad kula dagi kartaa buugaag afsooomaaliga ku qoran
                 <br />
                 <button
                   className="button-5"

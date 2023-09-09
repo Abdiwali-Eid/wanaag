@@ -20,8 +20,8 @@ const About = () => {
                   Buugaag.me waa website aad ka helaysid si fudud oo free ahna
                   aad u gala dagi kartid buugaagta af soomaaliga ku qoran ee
                   PDF-ka ah kuwooda ugu tayada sarreeya. Buugaagta waxaad ku
-                  raadin kartaa magacyadooda ama qaybaha ay ka kala
-                  tirsanyihiin. Si aad buugga aad rabtid aad ula waxaad ku
+                  raadin kartaa magacyadooda ama mowduucyada ay ka kala
+                  tirsanyihiin. Si aad buugga aad rabtid aad ula dagtid waxaad ku
                   dhufataa Button-ka Download ay ku qorantahay ee yaalla qaybta
                   hoose ee bogga buug walba .
                 </div>

@@ -420,7 +420,7 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Jidka Jannada' ? (
+                    ) : bugaag.name === 'Jidkii Jannada' ? (
                       <a
                         href="/files/JIDKII JANNADA-5.pdf 2022.pdf"
                         alt="alt text"

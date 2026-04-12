@@ -1,14 +1,11 @@
 import {
   Alert,
   Box,
-  Button,
-  Card,
   CircularProgress,
   Grid,
   Link,
   List,
   ListItem,
-  Rating,
   Typography,
 } from '@mui/material';
 import Image from 'next/image';
@@ -18,9 +15,6 @@ import Layout from '../../components/Layout';
 import classes from '../../utils/classes';
 import client from '../../utils/client';
 import { urlFor } from '../../utils/image';
-import Hoos from '../../components/Hoos';
-
-import ProductItem from '../../components/ProductItem';
 
 export default function ProductScreen(props) {
   const { slug } = props;
@@ -50,46 +44,64 @@ export default function ProductScreen(props) {
   }, []);
 
   return (
-    <Layout title={bugaag?.title}>
+    <Layout title={bugaag?.name}>
       {loading ? (
         <CircularProgress />
       ) : error ? (
         <Alert variant="error">{error}</Alert>
       ) : (
-        <Box style={{ paddingLeft: '25px' }}>
-          <Box sx={classes.section}>
+        <Box className="book-detail-page">
+          <Box sx={classes.section} className="book-detail-back-row">
             <NextLink href="/" passHref>
-              <Link>
+              <Link className="book-back-link">
                 <Typography>Dib u noqo</Typography>
               </Link>
             </NextLink>
           </Box>
-          <Grid container spacing={1}>
-            <Grid item md={6} xs={12} className="details">
-              <Image
-                src={urlFor(bugaag.image)}
-                alt={bugaag.name}
-                layout="responsive"
-                width={640}
-                height={640}
-                className="image-buug"
-              />
+          <Grid container spacing={3} className="book-detail-grid">
+            <Grid item md={5} xs={12} className="book-cover-col">
+              <div className="book-cover-frame">
+                <Image
+                  src={urlFor(bugaag.image)}
+                  alt={bugaag.name}
+                  layout="responsive"
+                  width={640}
+                  height={640}
+                  className="image-buug"
+                />
+              </div>
             </Grid>
-            <Grid md={4} xs={12}>
-              <List>
-                <ListItem>
-                  <Typography component="h1" variant="h1">
-                    {bugaag.name}
+            <Grid item md={7} xs={12} className="book-info-col">
+              <div className="book-info-card">
+                <Typography component="h1" className="book-detail-title">
+                  {bugaag.name}
+                </Typography>
+                <div className="book-detail-meta-grid">
+                  <div className="book-detail-meta-item">
+                    <span className="book-detail-meta-label">Qoraaga</span>
+                    <span className="book-detail-meta-value">{bugaag.Author}</span>
+                  </div>
+                  <div className="book-detail-meta-item">
+                    <span className="book-detail-meta-label">Category</span>
+                    <span className="book-detail-meta-value">{bugaag.category}</span>
+                  </div>
+                  <div className="book-detail-meta-item">
+                    <span className="book-detail-meta-label">Bogag</span>
+                    <span className="book-detail-meta-value">{bugaag.pages}</span>
+                  </div>
+                </div>
+                <div className="book-detail-description-box">
+                  <Typography className="book-detail-description-title">
+                    Description
                   </Typography>
-                </ListItem>
-                <ListItem>Qoraaga: {bugaag.Author}</ListItem>
-                <ListItem>Category: {bugaag.category}</ListItem>
-                <ListItem>Bogag: {bugaag.pages}</ListItem>
-                <ListItem>
-                  <Typography>Description: {bugaag.description}</Typography>
-                </ListItem>
-                <ListItem>
-                  <button fullWidth variant="contained" className="button-5">
+                  <Typography className="book-detail-description-text">
+                    {bugaag.description}
+                  </Typography>
+                </div>
+
+                <List className="book-detail-actions">
+                  <ListItem>
+                    <button className="button-5 book-download-btn">
                     {bugaag.name === 'Qaamuska Afsoomaaliga' ? (
                       <a
                         href="/files/QAAMUUSKA AF-SOOMAALIGA[1]-2.pdf"
@@ -673,9 +685,10 @@ export default function ProductScreen(props) {
                     ) : (
                       <Typography>Waxba ma hayno</Typography>
                     )}
-                  </button>
-                </ListItem>
-              </List>
+                    </button>
+                  </ListItem>
+                </List>
+              </div>
             </Grid>
           </Grid>
         </Box>

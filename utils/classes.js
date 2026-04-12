@@ -17,7 +17,8 @@ const classes = {
     textAlign: 'center',
   },
   appbar: {
-    backgroundColor: 'rgb(85, 128, 170)',
+    background: 'linear-gradient(135deg, rgb(73, 112, 152) 0%, rgb(85, 128, 170) 45%, rgb(120, 176, 232) 100%)',
+    boxShadow: '0 16px 32px rgba(22, 34, 47, 0.14)',
     '& a': {
       color: '#ffffff',
       marginLeft: 1,
@@ -25,14 +26,21 @@ const classes = {
   },
   toolbar: {
     justifyContent: 'space-between',
+    minHeight: '84px',
   },
   brand: {
     fontWeight: 'bold',
     fontSize: '1.5rem',
+    letterSpacing: '-0.03em',
   },
   navbarButton: {
     color: '#ffffff',
     textTransform: 'initial',
+    borderRadius: 999,
+    paddingLeft: 1.5,
+    paddingRight: 1.5,
+    backgroundColor: 'rgba(255, 255, 255, 0.12)',
+    backdropFilter: 'blur(10px)',
   },
   fullWidth: {
     width: '100%',
@@ -51,24 +59,25 @@ const classes = {
     backgroundColor: 'red',
   },
   searchForm: {
-    border: '1px solid #ffffff',
-    backgroundColor: '#ffffff',
-    borderRadius: 1,
+    border: '1px solid rgba(255, 255, 255, 0.28)',
+    backgroundColor: 'rgba(255, 255, 255, 0.16)',
+    borderRadius: 999,
+    overflow: 'hidden',
+    backdropFilter: 'blur(12px)',
   },
   searchInput: {
     paddingLeft: 1,
-    color: '#000000',
+    color: '#ffffff',
     '& ::placeholder': {
-      color: '#606060',
+      color: 'rgba(255, 255, 255, 0.72)',
     },
   },
   searchButton: {
-    backgroundColor: 'rgb(85, 128, 170)',
+    backgroundColor: 'rgba(255, 255, 255, 0.18)',
     padding: 1,
-
-    borderRadius: '0 5px 5px 0',
+    borderRadius: '0 999px 999px 0',
     '& span': {
-      color: '#000000',
+      color: '#ffffff',
     },
   },
 };

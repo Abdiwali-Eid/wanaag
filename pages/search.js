@@ -166,7 +166,7 @@ export default function SearchScreen() {
     });
     router.push('/cart');
   };
-  const isDesktop = useMediaQuery('(min-width:800px)');
+  const isDesktop = useMediaQuery('(min-width:800px)', { noSsr: true });
 
   return (
     <Layout title="search">

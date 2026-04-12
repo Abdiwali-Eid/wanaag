@@ -30,7 +30,7 @@ import client from '../utils/client';
 import Kor from '../components/Kor';
 import Dheex from '../asset/reading-books.png';
 import classes from '../utils/classes';
-import imsgg from '../public/reading-books.png';
+import imsgg from '../public/hero-male.jpg';
 import Hoos from '../components/Hoos';
 import Kormobil from '../components/Kormobil';
 import NextLink from 'next/link';
@@ -80,9 +80,9 @@ export default function Home() {
     fetchData();
   }, []);
 
-  const isDesktop = useMediaQuery('(min-width:900px)');
-  const isDesktops = useMediaQuery('(min-width:700px)');
-  const istablet = useMediaQuery('(min-width:1000px)');
+  const isDesktop = useMediaQuery('(min-width:900px)', { noSsr: true });
+  const isDesktops = useMediaQuery('(min-width:700px)', { noSsr: true });
+  const istablet = useMediaQuery('(min-width:1000px)', { noSsr: true });
   const [query, setQuery] = useState('');
   const queryChangeHandler = (e) => {
     setQuery(e.target.value);
@@ -101,7 +101,7 @@ export default function Home() {
         <>
           <div className="Content">
             <Grid
-              className="nud"
+              className="nud hero-shell"
               style={
                 {
                   // backgroundColor: 'white',
@@ -110,46 +110,30 @@ export default function Home() {
                 }
               }
             >
-              <div className="midig">
-                {/* Read PDF Books <br /> Online<br/>  <span className='sixid'>
-                start your learning journary by browsing millions of <br />
-                books from our library */}
-                <Grid sx={isDesktop ? classes.visible : classes.hidden}>
-                  <span className="ciwan">
-                    Si free ah u la dag{' '}
-                    <span style={{ color: 'rgb(85, 128, 170)' }}>
-                      Buugaag PDF ah
-                    </span>
-                    <br /> {' '}
-                  </span>
-                </Grid>
-                <Grid sx={isDesktop ? classes.hidden : classes.visible}>
-                  <span className="ciwan">
-                  Si free ah u la dag &nbsp;
-                    <span style={{ color: 'rgb(85, 128, 170)' }}>
-                    Buugaag PDF ah &nbsp;
-                    </span>
-                    
-                  </span>
-                </Grid>
-                <br />
-                si fudud oo bilaash ah ayaad kula dagi kartaa buugaag af sooomaali ku qoran
-                <br />
-                <button
-                  className="button-5"
-                  role="button"
-                  onClick={submitHandler}
-                >
-                  See All books
-                </button>
-                {/* <p> </p> */}
+              <div className="midig hero-copy">
+                <div className="hero-eyebrow">Somali reading library</div>
+                <h1 className="ciwan hero-title">
+                  Si free ah u la dag <span>Buugaag PDF ah</span>
+                </h1>
+                <p className="sixid hero-description">
+                  si fudud oo bilaash ah ayaad kula dagi kartaa buugaag af
+                  soomaali ku qoran iyo qoraallo kaa caawinaya akhriskaaga.
+                </p>
+                <div className="hero-actions">
+                  <button
+                    className="button-5 hero-button"
+                    role="button"
+                    onClick={submitHandler}
+                  >
+                    See All books
+                  </button>
+                </div>
               </div>
-              <div className="image-div">
+              <div className="image-div hero-visual">
                 <img
-                  src="https://hostacmee.space/demo/bookchoix/wp-content/uploads/revslider/slider-1/girl-reading-books-online.png"
-                  alt=""
-                  // width={'660px'}
-                  className="images"
+                  src={imsgg.src}
+                  alt="Illustration of a man reading books"
+                  className="images hero-image"
                 />
               </div>
             </Grid>

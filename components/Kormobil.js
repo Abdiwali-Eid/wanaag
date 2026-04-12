@@ -57,7 +57,7 @@ const Kormobil = () => {
     };
     fetchCategories();
   }, [enqueueSnackbar]);
-  const isDesktop = useMediaQuery('(min-width:800px)');
+  const isDesktop = useMediaQuery('(min-width:800px)', { noSsr: true });
 
   const [query, setQuery] = useState('');
   const queryChangeHandler = (e) => {

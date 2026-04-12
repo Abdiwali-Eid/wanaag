@@ -23,6 +23,7 @@ import {
   useMediaQuery,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 import SearchIcon from '@mui/icons-material/Search';
 import CancelIcon from '@mui/icons-material/Cancel';
@@ -51,6 +52,11 @@ export default function Layout({ title, description, children }) {
   const router = useRouter();
   const { state, dispatch } = useContext(Store);
   const { darkMode, userInfo } = state;
+  const navItems = [
+    { label: 'Home', href: '/' },
+    { label: 'All books', href: '/search' },
+    { label: 'About', href: '/about' },
+  ];
   const theme = createTheme({
     components: {
       MuiLink: {
@@ -127,7 +133,7 @@ export default function Layout({ title, description, children }) {
   }, [enqueueSnackbar]);
   // const isTablet=@media screen and (min-width: 800px)and (max-width: 1124px)
 
-  const isDesktop = useMediaQuery('(min-width:1100px)');
+  const isDesktop = useMediaQuery('(min-width:1100px)', { noSsr: true });
 
   const [query, setQuery] = useState('');
   const queryChangeHandler = (e) => {
@@ -137,6 +143,8 @@ export default function Layout({ title, description, children }) {
     e.preventDefault();
     router.push(`/search?query=${query}`);
   };
+  const isActiveRoute = (href) =>
+    router.pathname === href || (href === '/search' && router.pathname === '/search');
   return (
     <>
       <Head>
@@ -183,43 +191,39 @@ export default function Layout({ title, description, children }) {
               anchor="left"
               open={sidbarVisible}
               onClose={sidebarCloseHandler}
+              PaperProps={{ className: 'drawer-panel' }}
             >
-              <List>
-                <ListItem>
-                  <Box
-                    display="flex"
-                    alignItems="center"
-                    justifyContent="space-between"
-                  >
-                    <Typography>         </Typography>
-                    <IconButton
-                      aria-label="close"
-                      onClick={sidebarCloseHandler}
-                      className="floats"
-                    >
-                      <CancelIcon />
-                    </IconButton>
+              <List className="drawer-list">
+                <ListItem className="drawer-header">
+                  <Box className="drawer-brand-wrap">
+                    <Typography className="drawer-brand">Buugaag</Typography>
+                    <Typography className="drawer-subtitle">
+                      Discover books in Somali and beyond
+                    </Typography>
                   </Box>
+                  <IconButton
+                    aria-label="close"
+                    onClick={sidebarCloseHandler}
+                    className="drawer-close"
+                  >
+                    <CancelIcon />
+                  </IconButton>
                 </ListItem>
                 <Divider light />
-                <ListItem onClick={sidebarCloseHandler}>
-                  <NextLink href="/">
-                    <Link style={{ color: 'black' }}>
-                      Home
-                      <br />
-                    </Link>
+                {navItems.map((item) => (
+                  <NextLink key={item.href} href={item.href} passHref>
+                    <ListItem
+                      button
+                      component="a"
+                      onClick={sidebarCloseHandler}
+                      className={`drawer-link ${
+                        isActiveRoute(item.href) ? 'active' : ''
+                      }`}
+                    >
+                      {item.label}
+                    </ListItem>
                   </NextLink>
-                </ListItem>
-                <ListItem onClick={sidebarCloseHandler}>
-                  <NextLink href="" onClick={submitHandler}>
-                    <Link style={{ color: 'black' }}>All books</Link>
-                  </NextLink>
-                </ListItem>
-                <ListItem>
-                  <NextLink href="/about">
-                    <Link style={{ color: 'black' }}>About</Link>
-                  </NextLink>
-                </ListItem>
+                ))}
 
                 <Divider light />
                 {categories.map((category) => (
@@ -244,23 +248,22 @@ export default function Layout({ title, description, children }) {
             </Drawer>
             <Box
               sx={isDesktop ? classes.visible : classes.hidden}
-              className="toos"
+              className="desktop-search-wrap"
             >
-              <form onSubmit={submitHandler} className="toos">
-                <Box sx={classes.searchForm} style={{ width: '600px' }}>
+              <form onSubmit={submitHandler} className="desktop-search-form">
+                <Box sx={classes.searchForm} className="desktop-search-box">
                   <InputBase
                     name="query"
                     sx={classes.searchInput}
                     placeholder="Search Books"
                     onChange={queryChangeHandler}
-                    // style={{ marginRight: '40px' }}
+                    className="desktop-search-input"
                   />
                   <IconButton
                     type="submit"
                     sx={classes.searchButton}
                     aria-label="search"
-                    className="yaris"
-                    style={{ marginLeft: '368px' }}
+                    className="desktop-search-btn"
                   >
                     <SearchIcon />
                   </IconButton>
@@ -300,65 +303,58 @@ export default function Layout({ title, description, children }) {
                 </>
               ) : (
                 <NextLink href="/login" passHref>
-                  <Link>Login</Link>
+                  <IconButton
+                    component="a"
+                    aria-label="login"
+                    className="login-link"
+                  >
+                    <AccountCircleIcon />
+                  </IconButton>
                 </NextLink>
               )}
             </Box>
           </Toolbar>
           <Box
-            style={{
-              backgroundColor: 'white',
-              height: '48px',
-              paddingBottom: '38px',
-            }}
-            sx={isDesktop ? classes.visible : classes.hidden}
+            sx={{ display: isDesktop ? 'flex' : 'none' }}
+            className="desktop-nav-shell"
           >
-            <List>
-              <ListItem style={{ marginBottom: '10px' }}>
-                <NextLink href="/">
-                  <Link style={{ color: 'black', marginBottom: '10px' }}>
-                    Home
+            <nav className="desktop-nav" aria-label="Primary navigation">
+              {navItems.map((item) => (
+                <NextLink key={item.href} href={item.href} passHref>
+                  <Link
+                    className={`desktop-nav-link ${
+                      isActiveRoute(item.href) ? 'active' : ''
+                    }`}
+                  >
+                    {item.label}
                   </Link>
                 </NextLink>
-                <NextLink href="" onClick={submitHandler}>
-                  <Link style={{ color: 'black' }}>All books</Link>
-                </NextLink>
-
-                <NextLink href="/about">
-                  <Link style={{ color: 'black' }}>About</Link>
-                </NextLink>
-              </ListItem>
-            </List>
+              ))}
+            </nav>
           </Box>
 
           <Box
-            style={{ backgroundColor: 'white', height: '50px' }}
+            style={{ backgroundColor: 'white', height: '64px' }}
             sx={isDesktop ? classes.hidden : classes.visible}
+            className="mobile-search-shell"
           >
-            <form onSubmit={submitHandler} className="toos">
+            <form onSubmit={submitHandler} className="mobile-search-form">
               <Box
                 sx={classes.searchForm}
-                style={{
-                  backgroundColor: 'rgb(240, 242, 245)',
-                  border: '3px',
-                  marginTop: '3px',
-                }}
-                className="searchkayga"
+                className="searchkayga mobile-search-box"
               >
                 <InputBase
                   name="query"
                   sx={classes.searchInput}
                   placeholder="Search Books"
                   onChange={queryChangeHandler}
-                  className="inputbasekayga"
-                  style={{ backgroundColor: 'rgb(240, 242, 245)' }}
+                  className="inputbasekayga mobile-search-input"
                 />
                 <IconButton
                   type="submit"
                   sx={classes.searchButton}
                   aria-label="search"
-                  className="yaris"
-                  // style={{ marginLeft: '249px' }}
+                  className="yaris mobile-search-btn"
                 >
                   <SearchIcon />
                 </IconButton>

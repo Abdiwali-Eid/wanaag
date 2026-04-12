@@ -1,11 +1,8 @@
 import {
-  Button,
   Card,
   CardActionArea,
-  CardActions,
   CardContent,
   CardMedia,
-  Rating,
   Typography,
 } from '@mui/material';
 import NextLink from 'next/link';
@@ -14,30 +11,25 @@ import { urlForThumbnail } from '../utils/image';
 
 export default function ProductItem({ bugaag }) {
   return (
-    <Card>
+    <Card className="book-card">
       <NextLink href={`/bugaag/${bugaag.slug.current}`} passHref>
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            image={urlForThumbnail(bugaag.image)}
-            title={bugaag.name}
-          ></CardMedia>
-          <CardContent>
-            <Typography className="namecol">{bugaag.name}</Typography>
-            <Typography className="author">{bugaag.Author}</Typography>
-            {/* <Typography>
-              {product.rating} ({product.numReviews} reviews)
-              </Typography> */}
+        <CardActionArea className="book-card-action">
+          <div className="book-card-media-wrap">
+            <span className="book-card-badge">PDF</span>
+            <CardMedia
+              component="img"
+              image={urlForThumbnail(bugaag.image)}
+              title={bugaag.name}
+              className="book-card-image"
+            ></CardMedia>
+          </div>
+          <CardContent className="book-card-content">
+            <Typography className="namecol book-title">{bugaag.name}</Typography>
+            <Typography className="author book-author">{bugaag.Author}</Typography>
+            <Typography className="book-meta">Read online and download</Typography>
           </CardContent>
         </CardActionArea>
       </NextLink>
-      <CardActions>
-        {/* <Typography>${product.price}</Typography>
-          <Button size="small" color="primary">
-          <a  href="/files/NUUN.pdf" alt="alt text"  target="_blank" rel="noopener noreferrer" >Add to Cart</a> 
-
-          </Button> */}
-      </CardActions>
     </Card>
   );
 }

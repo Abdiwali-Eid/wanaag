@@ -1,7 +1,6 @@
 import {
   Alert,
   Button,
-  CircularProgress,
   Grid,
   List,
   ListItem,
@@ -19,6 +18,7 @@ import { useSnackbar } from 'notistack';
 import NextLink from 'next/link';
 import React, { useContext, useEffect, useState } from 'react';
 import Layout from '../components/Layout';
+import { SearchLoadingSkeleton } from '../components/PageSkeletons';
 
 import ProductItem from '../components/ProductItem';
 import classes from '../utils/classes';
@@ -168,6 +168,22 @@ export default function SearchScreen() {
   };
   const isDesktop = useMediaQuery('(min-width:800px)', { noSsr: true });
 
+  if (loading) {
+    return (
+      <Layout title="search">
+        <SearchLoadingSkeleton />
+      </Layout>
+    );
+  }
+
+  if (error) {
+    return (
+      <Layout title="search">
+        <Alert>{error}</Alert>
+      </Layout>
+    );
+  }
+
   return (
     <Layout title="search">
       <Grid sx={classes.section} container spacing={2}>
@@ -251,37 +267,31 @@ export default function SearchScreen() {
           </Grid>
 
           <Grid sx={classes.section} container spacing={3}>
-            {loading ? (
-              <CircularProgress />
-            ) : error ? (
-              <Alert>{error}</Alert>
-            ) : (
-              <Grid
-                container
-                spacing={3}
-                style={{
-                  display: 'grid',
-                  gridTemplateColumns: '1fr 1fr 1fr',
-                  paddingRight: '10px',
-                  paddingLeft: '10px',
-                  //  marginLeft:'1px'
-                }}
-              >
-                {products.map((bugaag) => (
-                  <Grid
-                    item
-                    md={10}
-                    key={bugaag.name}
-                    sx={isDesktop ? classes.visible : classes.hidden}
-                  >
-                    <ProductItem
-                      bugaag={bugaag}
-                      addToCartHandler={addToCartHandler}
-                    />
-                  </Grid>
-                ))}
-              </Grid>
-            )}
+            <Grid
+              container
+              spacing={3}
+              style={{
+                display: 'grid',
+                gridTemplateColumns: '1fr 1fr 1fr',
+                paddingRight: '10px',
+                paddingLeft: '10px',
+                //  marginLeft:'1px'
+              }}
+            >
+              {products.map((bugaag) => (
+                <Grid
+                  item
+                  md={10}
+                  key={bugaag.name}
+                  sx={isDesktop ? classes.visible : classes.hidden}
+                >
+                  <ProductItem
+                    bugaag={bugaag}
+                    addToCartHandler={addToCartHandler}
+                  />
+                </Grid>
+              ))}
+            </Grid>
 
             {/* {loading ? (
               <CircularProgress />
@@ -311,11 +321,7 @@ export default function SearchScreen() {
           </Grid>
         </Grid>
       </Grid>
-      {loading ? (
-        <CircularProgress />
-      ) : error ? (
-        <Alert>{error}</Alert>
-      ) : (
+      {
         <Grid sx={isDesktop ? classes.hidden : classes.visible}>
           <Grid
             container
@@ -332,7 +338,7 @@ export default function SearchScreen() {
             ))}
           </Grid>
         </Grid>
-      )}
+      }
     </Layout>
   );
 }

@@ -1,7 +1,6 @@
 import {
   Alert,
   Box,
-  CircularProgress,
   Grid,
   Link,
   List,
@@ -13,6 +12,7 @@ import { useEffect, useState } from 'react';
 import Layout from '../../components/Layout';
 import classes from '../../utils/classes';
 import client from '../../utils/client';
+import { SingleBookLoadingSkeleton } from '../../components/PageSkeletons';
 
 export default function ProductScreen(props) {
   const { slug } = props;
@@ -44,7 +44,7 @@ export default function ProductScreen(props) {
   return (
     <Layout title={bugaag?.name}>
       {loading ? (
-        <CircularProgress />
+        <SingleBookLoadingSkeleton />
       ) : error ? (
         <Alert variant="error">{error}</Alert>
       ) : (

@@ -22,10 +22,11 @@ import {
 } from '@mui/material';
 import { useRouter } from 'next/router';
 
-import { Alert, CircularProgress, Grid } from '@mui/material';
+import { Alert, Grid } from '@mui/material';
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import ProductItem from '../components/ProductItem';
+import { HomeLoadingSkeleton } from '../components/PageSkeletons';
 import client from '../utils/client';
 import Kor from '../components/Kor';
 import Dheex from '../asset/reading-books.png';
@@ -94,7 +95,7 @@ export default function Home() {
   return (
     <Layout>
       {loading ? (
-        <CircularProgress />
+        <HomeLoadingSkeleton />
       ) : error ? (
         <Alert variant="danger">{error}</Alert>
       ) : (

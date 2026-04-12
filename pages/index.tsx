@@ -188,12 +188,7 @@ export default function Home() {
                   <Grid
                     container
                     spacing={4}
-                    style={{
-                      display: 'grid',
-                      gridTemplateColumns: '1fr 1fr',
-                      paddingRight: '20px',
-                    }}
-                    className="tablet"
+                    className="tablet mobile-books-grid"
                   >
                     {products.map((bugaag) => (
                       <Grid item md={3} key={bugaag.slug}>

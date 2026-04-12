@@ -102,8 +102,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/QAAMUUSKA AF-SOOMAALIGA[1]-2.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -112,8 +111,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Kobocii Islaamiyiinta Soomaaliya.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -122,8 +120,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Diiwaanka_Gabayadii_Sayid_Maxamed_Cabdulle_Xasan.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -132,8 +129,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Midnimo, Maandeeq, iyo Muraayaddii Jabtay-ebyoon (1).pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -142,8 +138,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Soodoog-garanuug.com.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -152,8 +147,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/NUUN.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -162,8 +156,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/BaylintaBuuqa-.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -172,8 +165,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Salaad baa i dhaaftay.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -182,8 +174,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/garaadso intaanad guursan.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -192,8 +183,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/maana faay.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -202,8 +192,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Dhambaallada quraanka..pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -212,8 +201,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Xeerkii soomaalidii hore.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -222,8 +210,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/KU RAAXAYSO NOLOSHADA-1.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -232,8 +219,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Indhadeeqkuaaway.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -242,8 +228,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/hal ka haleel.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -252,8 +237,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/hal aan tabayey.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -262,8 +246,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Aabe Hodan ah Aabe Sabool ah. Dr. Jama Sahal (1).pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -272,8 +255,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/so_Quraanka_Kariimka_Iyo_Tarjamada_Macnihiisa_Ee_Afka_Soomaaliga (2).pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -282,8 +264,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Riyaadu saalixiin.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -292,8 +273,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Tobanka fure ee guusha. -.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -302,8 +282,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Adeegto.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -312,8 +291,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Dal Dad Waayey iyo Duni Damiir Beeshay!.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -322,8 +300,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/so_Afartan_Xadiis.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -332,8 +309,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/1000 sunno habeenkii iyo maalinkii.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -342,8 +318,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Amiina almufti.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -352,8 +327,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/antikiriistoos-pdf.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -362,8 +336,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Dhabannahays-garanuug.com (2).pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -372,8 +345,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Taariikhdii Daraawiishta iyo Sayid Maxamed (1).pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -382,8 +354,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Guri waa haween.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -392,8 +363,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Dikshaneeriga Cusub Ee Ardayda  -KAYDBOOKS "
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -402,8 +372,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/xaaraan la fududaystay.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -412,8 +381,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/habqoraalka sheekada..pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -422,8 +390,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/axkaamta tajwiidka.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -432,8 +399,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/JIDKII JANNADA-5.pdf 2022.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -442,8 +408,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Siduu nabigu scw u tukan jiray.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -452,8 +417,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/so_Axkaamta_xajka_iyo_cumrada.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -462,8 +426,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -472,8 +435,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/maareynta waqtiga.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -482,8 +444,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Daawada Murugada.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -492,8 +453,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Qaddarta Alle-h.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -502,8 +462,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Barashada naxwaha afsoomaaliga KAYDBOOKS .pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -512,8 +471,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -522,8 +480,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/maxaan u udoorannay dariiqa faqriga -KAYDBOOKS .pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -532,8 +489,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Fakar oo Hodan-noqo.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -542,8 +498,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Guure..pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -552,8 +507,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/naxwaha carabiga.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -562,8 +516,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Diiwaanka_Gabayadii_Sayid_Maxamed_Cabdulle_Xasan1.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -572,8 +525,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/indhasarcaad.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -582,8 +534,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Al-Faaruuq-sannadihii-hore (1).pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -592,8 +543,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/DabIyoDhagax.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -602,8 +552,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Hawaale Warran.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -612,8 +561,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/halgan iyo hagardaamo (1).pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -622,8 +570,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Mashruucii la dagaalanka nuurka .pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -632,8 +579,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/10 MAGA .pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -642,8 +588,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Furaha Ganacsiga 2014.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -652,8 +597,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -662,8 +606,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Ilbixnimadii_Adal_iyo_sooyaalkii_soomaaliyeed.pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -672,8 +615,7 @@ export default function ProductScreen(props) {
                       <a
                         href="/files/Sirta iyo Axkaamta Soonka-QABYO (1).pdf"
                         alt="alt text"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        download
                         className="buy-now"
                       >
                         Download
@@ -682,6 +624,12 @@ export default function ProductScreen(props) {
                       <Typography>Waxba ma hayno</Typography>
                     )}
                     </button>
+                  </ListItem>
+                  <ListItem>
+                    <Typography className="download-help-text">
+                      Mobile: haddii PDF-ku browser ku furmo, taabo menu-ga
+                      Chrome (⋮) kadibna dooro Download.
+                    </Typography>
                   </ListItem>
                 </List>
               </div>

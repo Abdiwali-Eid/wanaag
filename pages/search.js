@@ -320,14 +320,7 @@ export default function SearchScreen() {
           <Grid
             container
             spacing={4}
-            style={{
-              display: 'grid',
-              gridTemplateColumns: '1fr 1fr ',
-              paddingRight: '10px',
-              paddingLeft: '10px',
-              //  marginLeft:'1px'
-            }}
-            className="tablet"
+            className="tablet mobile-books-grid"
           >
             {products.map((bugaag) => (
               <Grid item md={3} key={bugaag.name}>

@@ -8,7 +8,6 @@ import {
   ListItem,
   Typography,
 } from '@mui/material';
-import Image from 'next/image';
 import NextLink from 'next/link';
 import { useEffect, useState } from 'react';
 import Layout from '../../components/Layout';
@@ -61,12 +60,9 @@ export default function ProductScreen(props) {
           <Grid container spacing={3} className="book-detail-grid">
             <Grid item md={5} xs={12} className="book-cover-col">
               <div className="book-cover-frame">
-                <Image
+                <img
                   src={urlFor(bugaag.image)}
                   alt={bugaag.name}
-                  layout="responsive"
-                  width={640}
-                  height={640}
                   className="image-buug"
                 />
               </div>

@@ -158,7 +158,7 @@ export default function ProductScreen(props) {
                       >
                         Download
                       </a>
-                    ) : bugaag.name === 'Baylinta Buuqa' ? (
+                    ) : bugaag.name === 'Cabdisaciid iyo Baylinta Buuqa' ? (
                       <a
                         href="/files/BaylintaBuuqa-.pdf"
                         alt="alt text"

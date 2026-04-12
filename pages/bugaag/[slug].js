@@ -13,7 +13,6 @@ import { useEffect, useState } from 'react';
 import Layout from '../../components/Layout';
 import classes from '../../utils/classes';
 import client from '../../utils/client';
-import { urlFor } from '../../utils/image';
 
 export default function ProductScreen(props) {
   const { slug } = props;
@@ -58,16 +57,7 @@ export default function ProductScreen(props) {
             </NextLink>
           </Box>
           <Grid container spacing={3} className="book-detail-grid">
-            <Grid item md={5} xs={12} className="book-cover-col">
-              <div className="book-cover-frame">
-                <img
-                  src={urlFor(bugaag.image)}
-                  alt={bugaag.name}
-                  className="image-buug"
-                />
-              </div>
-            </Grid>
-            <Grid item md={7} xs={12} className="book-info-col">
+            <Grid item md={12} xs={12} className="book-info-col">
               <div className="book-info-card">
                 <Typography component="h1" className="book-detail-title">
                   {bugaag.name}
@@ -626,10 +616,10 @@ export default function ProductScreen(props) {
                     </button>
                   </ListItem>
                   <ListItem>
-                    <Typography className="download-help-text">
+                    {/* <Typography className="download-help-text">
                       Mobile: haddii PDF-ku browser ku furmo, taabo menu-ga
                       Chrome (⋮) kadibna dooro Download.
-                    </Typography>
+                    </Typography> */}
                   </ListItem>
                 </List>
               </div>

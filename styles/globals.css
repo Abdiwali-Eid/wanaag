@@ -1043,10 +1043,12 @@ main .nud {
 
 .book-info-col {
   display: flex;
+  justify-content: center;
 }
 
 .book-info-card {
   width: 100%;
+  max-width: 980px;
   border-radius: 18px;
   border: 1px solid rgba(33, 53, 73, 0.09);
   background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);

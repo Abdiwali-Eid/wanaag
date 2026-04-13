@@ -192,7 +192,7 @@ export default function Home() {
                     className="tablet mobile-books-grid"
                   >
                     {products.map((bugaag) => (
-                      <Grid item md={3} key={bugaag.slug}>
+                      <Grid item xs={12} md={3} key={bugaag.slug}>
                         <ProductItem bugaag={bugaag}></ProductItem>
                       </Grid>
                     ))}

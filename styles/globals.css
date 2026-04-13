@@ -405,6 +405,41 @@ main .nud {
   width: 100%;
 }
 
+@media screen and (max-width: 700px) {
+  .mobile-books-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-left: 0.65rem;
+    padding-right: 0.65rem;
+  }
+
+  .mobile-books-grid > .MuiGrid-item {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .mobile-books-grid .book-card-image {
+    height: 230px;
+  }
+
+  .mobile-books-grid .book-card-content {
+    padding: 0.95rem 0.95rem 1rem !important;
+  }
+
+  .mobile-books-grid .book-title {
+    font-size: 1rem !important;
+    min-height: 2.55rem;
+  }
+
+  .mobile-books-grid .book-author {
+    font-size: 0.92rem !important;
+  }
+
+  .mobile-books-grid .book-meta {
+    font-size: 0.72rem !important;
+  }
+}
+
 .category-panel {
   width: 100%;
   max-width: 246px;

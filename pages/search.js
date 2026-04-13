@@ -329,7 +329,7 @@ export default function SearchScreen() {
             className="tablet mobile-books-grid"
           >
             {products.map((bugaag) => (
-              <Grid item md={3} key={bugaag.name}>
+              <Grid item xs={12} md={3} key={bugaag.name}>
                 <ProductItem
                   bugaag={bugaag}
                   // addToCartHandler={addToCartHandler}

@@ -52,7 +52,7 @@ export function HomeLoadingSkeleton() {
 
       <Grid container spacing={2}>
         {Array.from({ length: 8 }).map((_, idx) => (
-          <Grid item xs={6} sm={4} md={3} key={idx}>
+          <Grid item xs={12} sm={6} md={3} key={idx}>
             <SkeletonBookCard />
           </Grid>
         ))}
@@ -75,7 +75,7 @@ export function SearchLoadingSkeleton() {
         </Box>
         <Grid container spacing={2}>
           {Array.from({ length: 9 }).map((_, idx) => (
-            <Grid item xs={6} sm={4} md={4} key={idx}>
+            <Grid item xs={12} sm={6} md={4} key={idx}>
               <SkeletonBookCard />
             </Grid>
           ))}

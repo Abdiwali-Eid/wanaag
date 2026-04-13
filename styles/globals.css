@@ -411,19 +411,23 @@ main .nud {
     gap: 1rem;
     padding-left: 0.65rem;
     padding-right: 0.65rem;
+    justify-items: center;
   }
 
   .mobile-books-grid > .MuiGrid-item {
+    width: min(100%, 360px);
+    max-width: 360px;
+    margin: 0 auto;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 
   .mobile-books-grid .book-card-image {
-    height: 230px;
+    height: 250px;
   }
 
   .mobile-books-grid .book-card-content {
-    padding: 0.95rem 0.95rem 1rem !important;
+    padding: 1rem 0.95rem 1.05rem !important;
   }
 
   .mobile-books-grid .book-title {
@@ -1433,31 +1437,36 @@ main .nud {
   }
 
   .mobile-books-grid {
-    grid-template-columns: repeat(2, minmax(138px, 1fr));
-    gap: 0.62rem;
-    padding-left: 0.4rem;
-    padding-right: 0.4rem;
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  .mobile-books-grid > .MuiGrid-item {
+    width: min(100%, 340px);
+    max-width: 340px;
   }
 
   .book-card-image {
-    height: 170px;
+    height: 235px;
   }
 
   .book-card-content {
-    padding: 0.74rem 0.68rem 0.8rem !important;
+    padding: 0.95rem 0.85rem 0.95rem !important;
   }
 
   .book-title {
-    font-size: 0.87rem !important;
-    min-height: 2.35rem;
+    font-size: 0.98rem !important;
+    min-height: 2.55rem;
   }
 
   .book-author {
-    font-size: 0.8rem !important;
+    font-size: 0.88rem !important;
   }
 
   .book-meta {
-    font-size: 0.66rem !important;
+    font-size: 0.72rem !important;
   }
 
   .hero-title span {

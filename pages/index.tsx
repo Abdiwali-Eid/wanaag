@@ -100,7 +100,7 @@ export default function Home() {
         <Alert variant="danger">{error}</Alert>
       ) : (
         <>
-          <div className="Content home-content">
+          <div className="Content">
             <Grid
               className="nud hero-shell"
               style={
@@ -138,8 +138,8 @@ export default function Home() {
                 />
               </div>
             </Grid>
-            <div className="nuuro popular-section">
-              <Grid className="popular popular-header">
+            <div className="nuuro">
+              <Grid className="popular">
                 <Grid>
                   <b style={{ fontSize: '20px' }}>Popular Books</b>
                 </Grid>
@@ -157,7 +157,7 @@ export default function Home() {
                   </NextLink>
                 </Grid>
               </Grid>
-              <div className="afdalu popular-books-wrap">
+              <div className="afdalu">
                 <Grid sx={isDesktop ? classes.visible : classes.hidden}>
                   <Kor />
                 </Grid>

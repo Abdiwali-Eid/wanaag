@@ -409,8 +409,12 @@ main .nud {
   .mobile-books-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
+    width: calc(100% - 1.3rem);
+    margin-left: auto !important;
+    margin-right: auto !important;
     padding-left: 0.65rem;
     padding-right: 0.65rem;
+    box-sizing: border-box;
     justify-items: center;
   }
 
@@ -1439,8 +1443,12 @@ main .nud {
   .mobile-books-grid {
     grid-template-columns: 1fr;
     gap: 0.9rem;
+    width: calc(100% - 1.4rem);
+    margin-left: auto !important;
+    margin-right: auto !important;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
+    box-sizing: border-box;
   }
 
   .mobile-books-grid > .MuiGrid-item {

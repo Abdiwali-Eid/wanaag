@@ -138,7 +138,7 @@ export default function Home() {
                 />
               </div>
             </Grid>
-            <div className="nuuro">
+            <div className="nuuro popular-section">
               <Grid
                 className="popular"
                 style={{ display: 'flex', justifyContent: 'space-between' }}
@@ -160,7 +160,6 @@ export default function Home() {
                   </NextLink>
                 </Grid>
               </Grid>
-              <br />
               <div style={{ display: 'flex' }} className="afdalu">
                 <Grid sx={isDesktop ? classes.visible : classes.hidden}>
                   <Kor />
